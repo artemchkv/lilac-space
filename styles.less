@@ -11,6 +11,7 @@
 body {
     font-family: roboto, sans-serif;
     background-color: #000000;
+    position: relative;
 }
 
 header {
@@ -86,22 +87,21 @@ main {
 .start-advertising {
     height: 740px;
     background: url(/img/bg-start-advertising.svg.svg) no-repeat center;
-    display: flex;
     padding-top: 174px;
-    justify-content: center;
 }
 
-.start-advertising-wrapper {
-    max-width: 676px;
-    position: relative;
-    & .start-advertising-title {
+.title {
         font-family: "Montserrat", sans-serif;
         font-weight: 900;
         color: white;
         text-align: center;
         line-height: 50px;
         text-transform: uppercase;
-    }
+}
+.start-advertising-wrapper {
+    max-width: 676px;
+    position: relative;
+    margin: 0 auto;
     & .start-advertising-button {
         .auth-btn(@light-pink);
         border-radius: 60px;
@@ -111,15 +111,68 @@ main {
         &:hover {
             background-color: @light-pink-hover;
         }
+        margin: 48px auto 0 auto;
     }
     & .austonaut-img {
         position: absolute;
-        bottom: -137px;
-        right: 82px;
+        bottom: -257px;
+        right: -28px;
         width: 100px;
         height: auto;
     }
 }
 
-
-
+.why-advertise-with-us {
+    width: auto;
+    height: 996px;
+    position: relative;
+    background: transparent;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: -363px;
+        left: 0;
+        right: 0;
+        height: 996px;
+        background: url(./img/bg-why-advertise-with-us.png);
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+    & .why-advertise-with-us-wrapper {
+        max-width: 1056px;
+        margin: 0 auto;
+        height: auto;
+        & .why-advertise-grid {
+            display: grid;
+            grid-template-areas: 
+                "a a a"
+                "a a a";
+            gap: 48px;
+            margin-top: 67px;
+            & .why-advertise-card {
+                background: rgb(255, 255, 255);
+                border-radius: 20px;
+                padding: 30px 36px;
+                & h1 {
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 900;
+                    font-size: 21px;
+                    margin-bottom: 13px;
+                    color: rgba(119, 50, 136, 1);
+                    text-transform: uppercase;
+                    line-height: 25px;
+                }
+                & p {
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: rgba(82, 76, 76, 1);
+                    line-height: 25px;
+                }
+            }
+        }
+}
+}
