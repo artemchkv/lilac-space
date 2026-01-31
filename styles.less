@@ -1,178 +1,145 @@
 @light-pink: rgba(234, 82, 137, 1);
 @light-pink-hover: rgb(230, 60, 122);
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: roboto, sans-serif;
-    background-color: #000000;
-    position: relative;
+  font-family: roboto, sans-serif;
+  background-color: #000000;
+  position: relative;
 }
 
-header {
-    margin: 0 auto;
-    max-width: 1920px;
-    font-family: roboto, sans-serif;
-    font-size: 18px;
-    color: white;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-
-    &>.header-wrapper {
-        max-width: 1110px;
-        height: 87px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    & .header-logo {
-        width: 132px;
-        height: 38px;
-    }
-    & .header-panel {
-        display: flex;
-        gap: 40px;
-        &>.menu-btn {
-            color: white;
-            cursor: pointer;
-            text-decoration: none;
-            &:visited, &:active {
-                color: white;
-            }  
-        }
-    }
-}
 .auth-btn(@bcolor) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 26px;
-    font-size: 18px;
-    color: white;
-    background-color: @bcolor;
-    border: none;
-    border-radius: 5px;
-    height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 26px;
+  font-size: 18px;
+  color: white;
+  background-color: @bcolor;
+  border: none;
+  border-radius: 5px;
+  height: 47px;
 }
 
 .auth-btn-wrapper {
-    display: flex;
-    gap: 6px;
+  display: flex;
+  gap: 6px;
 }
 
 .auth-login-btn {
-    .auth-btn(transparent);
-    cursor: pointer;
+  .auth-btn(transparent);
+  cursor: pointer;
 }
+
 .auth-reg-btn {
-    .auth-btn(@light-pink);
-    cursor: pointer;
-    &:hover {
-        background-color: @light-pink-hover;
-    }
+  .auth-btn(@light-pink);
+  cursor: pointer;
+
+  &:hover {
+    background-color: @light-pink-hover;
+  }
 }
 
 main {
-    margin: 0 auto;
-    max-width: 1920px;
+  margin: 0 auto;
+  max-width: 1920px;
 }
 
 .start-advertising {
-    height: 740px;
-    background: url(/img/bg-start-advertising.svg.svg) no-repeat center;
-    padding-top: 174px;
+  height: 740px;
+  background: url(/img/bg-start-advertising.svg.svg) no-repeat center;
+  padding-top: 174px;
 }
 
 .title {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 900;
-        color: white;
-        text-align: center;
-        line-height: 50px;
-        text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
 }
+
 .start-advertising-wrapper {
-    max-width: 676px;
-    position: relative;
-    margin: 0 auto;
-    & .start-advertising-button {
-        .auth-btn(@light-pink);
-        border-radius: 60px;
-        cursor: pointer;
-        height: 72px;
-        min-width: 278px;
-        &:hover {
-            background-color: @light-pink-hover;
-        }
-        margin: 48px auto 0 auto;
+  max-width: 676px;
+  position: relative;
+  margin: 0 auto;
+
+  & .start-advertising-button {
+    .auth-btn(@light-pink);
+    border-radius: 60px;
+    cursor: pointer;
+    height: 72px;
+    min-width: 278px;
+
+    &:hover {
+      background-color: @light-pink-hover;
     }
-    & .austonaut-img {
-        position: absolute;
-        bottom: -257px;
-        right: -28px;
-        width: 100px;
-        height: auto;
-    }
+
+    margin: 48px auto 0 auto;
+  }
+
+  & .austonaut-img {
+    position: absolute;
+    bottom: -257px;
+    right: -28px;
+    width: 100px;
+    height: auto;
+  }
 }
 
 .why-advertise-with-us {
-    width: auto;
+  width: auto;
+  position: relative;
+  background: transparent;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -363px;
+    left: 0;
+    right: 0;
+    height: 996px;
+    background: url(./img/bg-why-advertise-with-us.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+
+  & .why-advertise-with-us-wrapper {
+    max-width: 1056px;
+    margin: 0 auto;
     height: auto;
-    position: relative;
-    background: transparent;
-    
-    &::before {
-        content: '';
-        position: absolute;
-        top: -363px;
-        left: 0;
-        right: 0;
-        height: 996px;
-        background: url(./img/bg-why-advertise-with-us.png);
-        background-size: cover;
-        background-position: center;
-        z-index: -1;
-    }
-    & .why-advertise-with-us-wrapper {
-        max-width: 1056px;
-        margin: 0 auto;
-        height: auto;
-        & .why-advertise-grid {
-            display: grid;
-            grid-template-areas: 
-                "a a a"
-                "a a a";
-            gap: 48px;
-            margin-top: 67px;
-            & .why-advertise-card {
-                background: rgb(255, 255, 255);
-                border-radius: 20px;
-                padding: 30px 36px;
-                & h1 {
-                    font-family: "Montserrat", sans-serif;
-                    font-weight: 900;
-                    font-size: 21px;
-                    margin-bottom: 13px;
-                    color: rgba(119, 50, 136, 1);
-                    text-transform: uppercase;
-                    line-height: 25px;
-                }
-                & p {
-                    font-family: "Roboto", sans-serif;
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 24px;
-                    color: rgba(82, 76, 76, 1);
-                    line-height: 25px;
-                }
-            }
+
+    & .why-advertise {
+      &-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 48px;
+        margin-top: 67px;
+      }
+      &-card {
+        background: rgb(255, 255, 255);
+        border-radius: 20px;
+        padding: 30px 36px;
+
+        & h1 {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 900;
+          font-size: 21px;
+          margin-bottom: 13px;
+          color: rgba(119, 50, 136, 1);
+          text-transform: uppercase;
+          line-height: 25px;
         }
-}
+
+        & p {
+          font-family: 'Roboto', sans-serif;
+          font-size: 18px;
+          line-height: 24px;
+          color: rgba(82, 76, 76, 1);
+          line-height: 25px;
+        }
+      }
+    }
+  }
 }

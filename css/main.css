@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 0 auto;
+  max-width: 1920px;
+  font-family: roboto, sans-serif;
+  font-size: 18px;
+  color: white;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+header > .header-wrapper {
+  max-width: 1110px;
+  height: 87px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-logo {
+  width: 132px;
+  height: 38px;
+}
+header .header-panel {
+  display: flex;
+  gap: 40px;
+}
+header .header-panel > .menu-btn {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+header .header-panel > .menu-btn:visited, header .header-panel > .menu-btn:active {
+  color: white;
+}
+
+.auth-btn-wrapper {
+  display: flex;
+  gap: 6px;
+}
+
+.auth-login-btn {
+  cursor: pointer;
+}
+
+.auth-reg-btn {
+  cursor: pointer;
+}
+.auth-reg-btn:hover {
+  background-color: rgb(230, 60, 122);
+}/*# sourceMappingURL=main.css.map */

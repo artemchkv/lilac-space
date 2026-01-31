@@ -1,46 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
   font-family: roboto, sans-serif;
   background-color: #000000;
   position: relative;
-}
-header {
-  margin: 0 auto;
-  max-width: 1920px;
-  font-family: roboto, sans-serif;
-  font-size: 18px;
-  color: white;
-  width: 100%;
-  background-color: #000000;
-}
-header > .header-wrapper {
-  max-width: 1110px;
-  height: 87px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .header-logo {
-  width: 132px;
-  height: 38px;
-}
-header .header-panel {
-  display: flex;
-  gap: 40px;
-}
-header .header-panel > .menu-btn {
-  color: white;
-  cursor: pointer;
-  text-decoration: none;
-}
-header .header-panel > .menu-btn:visited,
-header .header-panel > .menu-btn:active {
-  color: white;
 }
 .auth-btn-wrapper {
   display: flex;
@@ -85,7 +46,7 @@ main {
   padding-top: 174px;
 }
 .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   color: white;
   text-align: center;
@@ -126,7 +87,6 @@ main {
 }
 .why-advertise-with-us {
   width: auto;
-  height: auto;
   position: relative;
   background: transparent;
 }
@@ -149,17 +109,17 @@ main {
 }
 .why-advertise-with-us .why-advertise-with-us-wrapper .why-advertise-grid {
   display: grid;
-  grid-template-areas: "a a a" "a a a";
+  grid-template-columns: repeat(3, 1fr);
   gap: 48px;
   margin-top: 67px;
 }
-.why-advertise-with-us .why-advertise-with-us-wrapper .why-advertise-grid .why-advertise-card {
+.why-advertise-with-us .why-advertise-with-us-wrapper .why-advertise-card {
   background: #ffffff;
   border-radius: 20px;
   padding: 30px 36px;
 }
-.why-advertise-with-us .why-advertise-with-us-wrapper .why-advertise-grid .why-advertise-card h1 {
-  font-family: "Montserrat", sans-serif;
+.why-advertise-with-us .why-advertise-with-us-wrapper .why-advertise-card h1 {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   font-size: 21px;
   margin-bottom: 13px;
@@ -167,9 +127,8 @@ main {
   text-transform: uppercase;
   line-height: 25px;
 }
-.why-advertise-with-us .why-advertise-with-us-wrapper .why-advertise-grid .why-advertise-card p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+.why-advertise-with-us .why-advertise-with-us-wrapper .why-advertise-card p {
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #524c4c;
