@@ -1,3 +1,4 @@
+@use '../abstracts' as *;
 // .auth-btn(@bcolor) {
 //   display: flex;
 //   align-items: center;
@@ -11,8 +12,6 @@
 //   height: 47px;
 // }
 
-$light-pink-hover: rgb(230, 60, 122);
-
 .auth-btn-wrapper {
   display: flex;
   gap: 6px;
@@ -24,7 +23,6 @@ $light-pink-hover: rgb(230, 60, 122);
 
 .auth-reg-btn {
   cursor: pointer;
-  background-color: $light-pink;
 
   &:hover {
     background-color: $light-pink-hover;
