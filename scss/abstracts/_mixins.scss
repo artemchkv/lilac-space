@@ -1,0 +1,22 @@
+@mixin auth-btn($bcolor) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 26px;
+  font-size: 18px;
+  color: white;
+  background-color: $bcolor;
+  border: none;
+  border-radius: 5px;
+  height: 47px;
+  cursor: pointer;
+}
+
+@mixin title($color: white) {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: $color;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
+}

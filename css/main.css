@@ -2,6 +2,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: roboto, sans-serif;
+  background-color: #000000;
+  position: relative;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1920px;
 }
 
 header {
@@ -37,6 +45,31 @@ header .header-panel > .menu-btn {
 header .header-panel > .menu-btn:visited, header .header-panel > .menu-btn:active {
   color: white;
 }
+header .header-panel > .menu-btn:hover {
+  color: #ea5289;
+}
+
+.start-advertising {
+  height: 740px;
+  background: url("/img/bg-start-advertising.svg.svg") no-repeat center top;
+  padding-top: 174px;
+}
+
+.start-advertising-wrapper {
+  max-width: 676px;
+  position: relative;
+  margin: 0 auto;
+}
+.start-advertising-wrapper .austonaut-img {
+  position: absolute;
+  bottom: -257px;
+  right: -28px;
+  width: 100px;
+  height: auto;
+}
+.start-advertising-wrapper .start-adv-btn__pos {
+  margin: 40px auto 0 auto;
+}
 
 .auth-btn-wrapper {
   display: flex;
@@ -44,12 +77,73 @@ header .header-panel > .menu-btn:visited, header .header-panel > .menu-btn:activ
 }
 
 .auth-login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 26px;
+  font-size: 18px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  height: 47px;
   cursor: pointer;
+}
+.auth-login-btn:hover {
+  color: rgb(245.0412371134, 172.9587628866, 199.0412371134);
 }
 
 .auth-reg-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 26px;
+  font-size: 18px;
+  color: white;
+  background-color: #ea5289;
+  border: none;
+  border-radius: 5px;
+  height: 47px;
   cursor: pointer;
 }
 .auth-reg-btn:hover {
-  background-color: rgb(230, 60, 122);
+  background-color: rgb(228.4793814433, 36.5206185567, 105.9793814433);
+}
+
+.start-advertising-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 26px;
+  font-size: 18px;
+  color: white;
+  background-color: #ea5289;
+  border: none;
+  border-radius: 5px;
+  height: 47px;
+  cursor: pointer;
+  border-radius: 60px;
+  height: 72px;
+  min-width: 278px;
+}
+.start-advertising-button:hover {
+  background-color: rgb(228.4793814433, 36.5206185567, 105.9793814433);
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.title__dark {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: black;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */

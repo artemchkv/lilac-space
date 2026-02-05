@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+.title {
+  @include title();
+}
+
+.title__dark {
+  @include title($color: black);
+}

@@ -1,16 +1,5 @@
+@use 'sass:color';
 @use '../abstracts' as *;
-// .auth-btn(@bcolor) {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   padding: 0 26px;
-//   font-size: 18px;
-//   color: white;
-//   background-color: @bcolor;
-//   border: none;
-//   border-radius: 5px;
-//   height: 47px;
-// }
 
 .auth-btn-wrapper {
   display: flex;
@@ -18,13 +7,29 @@
 }
 
 .auth-login-btn {
-  cursor: pointer;
+  @include auth-btn(transparent);
+
+  &:hover {
+    color: color.adjust($light-pink, $lightness: 20%);
+  }
 }
 
 .auth-reg-btn {
-  cursor: pointer;
+  @include auth-btn($light-pink);
 
   &:hover {
-    background-color: $light-pink-hover;
+    background-color: color.adjust($light-pink, $lightness: -10%);
   }
+}
+
+.start-advertising-button {
+  @include auth-btn($light-pink);
+  border-radius: 60px;
+  height: 72px;
+  min-width: 278px;
+
+  &:hover {
+    background-color: color.adjust($light-pink, $lightness: -10%);
+  }
+
 }

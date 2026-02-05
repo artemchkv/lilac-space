@@ -3,5 +3,7 @@
 @use 'base/reset';
 @use 'layout/footer';
 @use 'layout/header';
+@use 'layout/section-start-adv';
 @use 'components/buttons';
+@use 'components/title';
 @use 'pages/home';

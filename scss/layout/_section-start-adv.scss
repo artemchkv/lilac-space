@@ -1,0 +1,23 @@
+.start-advertising {
+  height: 740px;
+  background: url('/img/bg-start-advertising.svg.svg') no-repeat center top;
+  padding-top: 174px;
+}
+
+.start-advertising-wrapper {
+  max-width: 676px;
+  position: relative;
+  margin: 0 auto;
+
+  & .austonaut-img {
+    position: absolute;
+    bottom: -257px;
+    right: -28px;
+    width: 100px;
+    height: auto;
+  }
+
+  & .start-adv-btn__pos {
+    margin: 40px auto 0 auto;
+  }
+}
