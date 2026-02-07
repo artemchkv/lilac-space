@@ -1,8 +1,11 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: roboto, sans-serif;
+}
+
+body {
   background-color: #000000;
   position: relative;
 }
@@ -69,6 +72,68 @@ header .header-panel > .menu-btn:hover {
 }
 .start-advertising-wrapper .start-adv-btn__pos {
   margin: 40px auto 0 auto;
+}
+
+.why-advertise-with-us {
+  width: auto;
+  position: relative;
+  background: transparent;
+}
+.why-advertise-with-us::before {
+  content: "";
+  position: absolute;
+  top: -371px;
+  left: 0;
+  right: 0;
+  height: 996px;
+  background: url(../../img/bg-why-advertise-with-us.png);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.why-advertise-with-us .why-advertise-with-us-wrapper {
+  max-width: 1056px;
+  margin: 0 auto;
+  height: auto;
+}
+.why-advertise-with-us .why-advertise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  margin-top: 67px;
+}
+
+.ad-formats {
+  width: 100%;
+  height: 1141px;
+  background: url(../../img/bg-ad-formats.png);
+  margin-top: 90px;
+  padding-top: 126px;
+}
+
+.formats-wrapper {
+  max-width: 912px;
+  height: 873px;
+  margin: 0 auto;
+}
+
+.formats-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+
+.formats-text-container {
+  max-width: 500px;
+}
+
+.ad-formats-text {
+  font-family: "roboto", sans-serif;
+  color: rgb(200, 175, 215);
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0%;
 }
 
 .auth-btn-wrapper {
@@ -146,4 +211,41 @@ header .header-panel > .menu-btn:hover {
   text-align: center;
   line-height: 50px;
   text-transform: uppercase;
+}
+
+.subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 21px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+.subtitle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.why-advertise-card {
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 30px 36px;
+}
+.why-advertise-card h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 21px;
+  margin-bottom: 13px;
+  color: rgb(119, 50, 136);
+  text-transform: uppercase;
+  line-height: 25px;
+}
+.why-advertise-card p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgb(82, 76, 76);
+  line-height: 25px;
 }/*# sourceMappingURL=main.css.map */

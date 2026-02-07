@@ -7,3 +7,18 @@
 .title__dark {
   @include title($color: black);
 }
+
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 21px;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+}
+
+.subtitle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+}

@@ -1,16 +1,5 @@
-  & .why-advertise-with-us-wrapper {
-    max-width: 1056px;
-    margin: 0 auto;
-    height: auto;
-
-    & .why-advertise {
-      &-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 48px;
-        margin-top: 67px;
-      }
-      &-card {
+.why-advertise {
+    &-card {
         background: rgb(255, 255, 255);
         border-radius: 20px;
         padding: 30px 36px;
@@ -32,7 +21,5 @@
           color: rgba(82, 76, 76, 1);
           line-height: 25px;
         }
-      }
     }
-  }
 }

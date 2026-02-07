@@ -1,0 +1,30 @@
+.why-advertise-with-us {
+  width: auto;
+  position: relative;
+  background: transparent;
+  &::before {
+      content: '';
+      position: absolute;
+      top: -371px;
+      left: 0;
+      right: 0;
+      height: 996px;
+      background: url(../../img/bg-why-advertise-with-us.png);
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+    }
+    & .why-advertise-with-us-wrapper {
+    max-width: 1056px;
+    margin: 0 auto;
+    height: auto;
+    }
+    & .why-advertise {
+      &-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 48px;
+        margin-top: 67px;
+      }
+    }
+}
