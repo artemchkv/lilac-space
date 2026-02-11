@@ -136,6 +136,57 @@ header .header-panel > .menu-btn:hover {
   letter-spacing: 0%;
 }
 
+.verticals {
+  width: auto;
+  position: relative;
+  height: 452px;
+  padding-top: 90px;
+}
+.verticals :before {
+  content: "";
+  position: absolute;
+  top: -264px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(32, 32, 32);
+  z-index: -2;
+}
+
+.verticals-bg {
+  position: absolute;
+  top: 0;
+  left: 147px;
+  width: 1618px;
+  height: 451.5px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.verticals-container {
+  width: 1054px;
+  height: 110px;
+  margin: 67px auto 0 auto;
+  display: flex;
+  gap: 44px;
+  align-items: center;
+}
+
+.verticals-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 176px;
+  height: 110px;
+  border-radius: 20px;
+  background-color: rgb(118, 50, 137);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 21px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
 .auth-btn-wrapper {
   display: flex;
   gap: 6px;
@@ -226,6 +277,16 @@ header .header-panel > .menu-btn:hover {
   align-items: center;
   gap: 6px;
   margin-bottom: 14px;
+}
+
+.verticals-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 66px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .why-advertise-card {

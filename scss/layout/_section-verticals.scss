@@ -1,0 +1,51 @@
+.verticals {
+    width: auto;
+    position: relative;
+    height: 452px;
+    padding-top: 90px;
+    :before {
+    content: "";
+        position: absolute;
+        top: -264px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(32, 32, 32, 1);
+        z-index: -2;
+    }
+    
+} 
+
+.verticals-bg {
+    position: absolute;
+    top: 0;
+    left: 147px;
+    width: 1618px;
+    height: 451.5px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.verticals-container {
+    width: 1054px;
+    height: 110px;
+    margin: 67px auto 0 auto;
+    display: flex;
+    gap: 44px;
+    align-items: center;
+}
+
+.verticals-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 176px;
+    height: 110px;
+    border-radius: 20px;
+    background-color: rgba(118, 50, 137, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 21px;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+}
