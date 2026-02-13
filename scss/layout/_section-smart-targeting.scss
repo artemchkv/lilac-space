@@ -1,0 +1,22 @@
+.smart-targeting {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding-top: 93px;
+  padding-bottom: 92px;
+}
+
+.targeting-data-wrapper {
+  padding-top: 67px;
+  max-width: 911px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 57px;
+
+  .targeting-data-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 57px;
+  }
+}

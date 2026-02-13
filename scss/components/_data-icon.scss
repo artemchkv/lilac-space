@@ -1,0 +1,31 @@
+@use '../abstracts' as *;
+$data-icon: geo, device, traffic-quality, placement, vertical, day-time-parting, frequency-capping, individual-ad-zones;
+
+.data-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+
+  .data-img {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+
+  }
+}
+
+@each $text in $data-icon {
+  .img-#{$text} {
+    background-image: url('../../img/img-#{$text}.svg');
+  }
+}
+
+.data-text {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: $fc-primary;
+}
