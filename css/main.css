@@ -209,6 +209,14 @@ header .header-panel > .menu-btn:hover {
   margin-top: 57px;
 }
 
+.partners {
+  width: 100%;
+  background: url(../../img/bg-partners.png);
+  background-color: white;
+  padding-top: 77px;
+  padding-bottom: 58px;
+}
+
 .auth-btn-wrapper {
   display: flex;
   gap: 6px;
@@ -384,4 +392,36 @@ header .header-panel > .menu-btn:hover {
   letter-spacing: 0px;
   text-align: center;
   color: #524C4C;
+}
+
+.partners-li-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  max-width: 1108px;
+  margin: 0 auto;
+}
+.partners-li-wrapper .partners-img {
+  width: 20%;
+  height: 58px;
+}
+
+.img-exo-logo {
+  background: url("../../img/img-exo-logo.png") center left/contain no-repeat;
+}
+
+.img-advidi-logo {
+  background: url("../../img/img-advidi-logo.png") center left/contain no-repeat;
+}
+
+.img-trafficstars-logo {
+  background: url("../../img/img-trafficstars-logo.png") center left/contain no-repeat;
+}
+
+.img-affmy-logo {
+  background: url("../../img/img-affmy-logo.png") center left/contain no-repeat;
+}
+
+.img-trafficfactory-logo {
+  background: url("../../img/img-trafficfactory-logo.png") center left/contain no-repeat;
 }/*# sourceMappingURL=main.css.map */
