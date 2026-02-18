@@ -32,3 +32,8 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+.increas-leads-title {
+  @include title();
+  text-align: left;
+}
