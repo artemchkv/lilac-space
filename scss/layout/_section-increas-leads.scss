@@ -1,0 +1,31 @@
+.increas-leads {
+    width: 100%;
+    padding: 65px 0 80px 405px;
+    background: url(../../img/bg-increas-leads.png) no-repeat;
+    position: relative;
+}
+
+.increas-leads-container {
+    margin-top: 10px;
+    max-width: 634px;
+    position: relative;
+    z-index: 2;
+}
+
+.increas-leads-btn-pos {
+    margin-top: 50px;
+}
+
+.stars-increas-leads {
+    position: absolute;
+    top: 20px;
+    left: 280px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.rocket-increas-leads {
+    position: absolute;
+    top: -71px;
+    left: 685px;
+}

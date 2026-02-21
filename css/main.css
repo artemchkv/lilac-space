@@ -212,6 +212,46 @@ header .header-panel > .menu-btn:hover {
   margin-top: 57px;
 }
 
+.partners {
+  width: 100%;
+  background: url(../../img/bg-partners.png);
+  background-color: white;
+  padding-top: 77px;
+  padding-bottom: 58px;
+}
+
+.increas-leads {
+  width: 100%;
+  padding: 65px 0 80px 405px;
+  background: url(../../img/bg-increas-leads.png) no-repeat;
+  position: relative;
+}
+
+.increas-leads-container {
+  margin-top: 10px;
+  max-width: 634px;
+  position: relative;
+  z-index: 2;
+}
+
+.increas-leads-btn-pos {
+  margin-top: 50px;
+}
+
+.stars-increas-leads {
+  position: absolute;
+  top: 20px;
+  left: 280px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.rocket-increas-leads {
+  position: absolute;
+  top: -71px;
+  left: 685px;
+}
+
 .auth-btn-wrapper {
   display: flex;
   gap: 6px;
@@ -268,7 +308,7 @@ header .header-panel > .menu-btn:hover {
   min-width: 278px;
 }
 .start-advertising-button:hover {
-  background-color: rgb(228.4793814433, 36.5206185567, 105.9793814433);
+  background-color: rgb(231.2396907216, 59.2603092784, 121.4896907216);
 }
 
 .title {
@@ -312,6 +352,16 @@ header .header-panel > .menu-btn:hover {
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   text-align: center;
+}
+
+.increas-leads-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 .why-advertise-card {
@@ -387,4 +437,36 @@ header .header-panel > .menu-btn:hover {
   letter-spacing: 0px;
   text-align: center;
   color: #524C4C;
+}
+
+.partners-li-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  max-width: 1108px;
+  margin: 0 auto;
+}
+.partners-li-wrapper .partners-img {
+  width: 20%;
+  height: 58px;
+}
+
+.img-exo-logo {
+  background: url("../../img/img-exo-logo.png") center left/contain no-repeat;
+}
+
+.img-advidi-logo {
+  background: url("../../img/img-advidi-logo.png") center left/contain no-repeat;
+}
+
+.img-trafficstars-logo {
+  background: url("../../img/img-trafficstars-logo.png") center left/contain no-repeat;
+}
+
+.img-affmy-logo {
+  background: url("../../img/img-affmy-logo.png") center left/contain no-repeat;
+}
+
+.img-trafficfactory-logo {
+  background: url("../../img/img-trafficfactory-logo.png") center left/contain no-repeat;
 }/*# sourceMappingURL=main.css.map */
