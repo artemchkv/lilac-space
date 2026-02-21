@@ -30,6 +30,7 @@ header > .header-wrapper {
   max-width: 1110px;
   height: 87px;
   margin: 0 auto;
+  padding-inline: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,6 +55,16 @@ header .header-panel > .menu-btn:hover {
   color: #ea5289;
 }
 
+@media screen and (max-width: 1200px) {
+  header .header-panel {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  header .logo-link {
+    display: none;
+  }
+}
 .start-advertising {
   height: 740px;
   background: url("/img/bg-start-advertising.svg.svg") no-repeat center top;
@@ -309,6 +320,13 @@ header .header-panel > .menu-btn:hover {
 }
 .start-advertising-button:hover {
   background-color: rgb(231.2396907216, 59.2603092784, 121.4896907216);
+}
+
+.gamburger-menu {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  background: url("../../img/gamburger-menu-icon.svg") center center/contain no-repeat;
 }
 
 .title {
