@@ -3,8 +3,9 @@
     position: relative;
     height: 452px;
     padding-top: 90px;
-    :before {
-    content: "";
+
+    &:before {
+        content: "";
         position: absolute;
         top: -264px;
         left: 0;
@@ -13,24 +14,25 @@
         background-color: rgba(32, 32, 32, 1);
         z-index: -2;
     }
-    
-} 
+
+}
 
 .verticals-bg {
     position: absolute;
     top: 0;
-    left: 147px;
-    width: 1618px;
-    height: 451.5px;
+    left: 0;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     z-index: -1;
 }
 
 .verticals-container {
-    width: 1054px;
-    height: 110px;
+    width: 100%;
+    max-width: 1110px;
     margin: 67px auto 0 auto;
     display: flex;
+    flex-wrap: wrap;
     gap: 44px;
     align-items: center;
 }
