@@ -3,6 +3,17 @@
     padding: 65px 0 80px 405px;
     background: url(../../img/bg-increas-leads.png) no-repeat;
     position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url(../../img/stars-bg.png) no-repeat center / cover;
+        z-index: 1;
+        pointer-events: none;
+    }
 }
 
 .increas-leads-container {
@@ -16,16 +27,26 @@
     margin-top: 50px;
 }
 
-.stars-increas-leads {
-    position: absolute;
-    top: 20px;
-    left: 280px;
-    z-index: 1;
-    pointer-events: none;
-}
-
 .rocket-increas-leads {
     position: absolute;
     top: -71px;
     left: 685px;
+}
+
+@media screen and (max-width: 1500px) {
+    .increas-leads {
+        padding: 65px 0 80px 150px;
+    }
+    .rocket-increas-leads {
+        left: 600px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .increas-leads {
+        padding: 65px 0 80px 150px;
+    }
+    .rocket-increas-leads {
+        display: none;
+    }
 }
