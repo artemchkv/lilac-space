@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 footer {
   display: flex;
   justify-content: center;
@@ -53,11 +55,21 @@ footer {
   color: white;
   cursor: pointer;
   text-decoration: none;
-  }
 
-  &:hover {
-    color: $light-pink;
+  a {
+    color: #ffffff;
+
+    &:visited,
+    &:focus {
+      color: #ffffff;
+    }
+
+    &:hover {
+      color: $light-pink;
+    }
   }
+}
+
 
 .footer-social-media a {
   flex: 0 0 auto;

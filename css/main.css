@@ -69,6 +69,18 @@ footer {
   gap: 16px;
   justify-content: flex-end;
   margin-top: 10px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+.footer-links a {
+  color: #ffffff;
+}
+.footer-links a:visited, .footer-links a:focus {
+  color: #ffffff;
+}
+.footer-links a:hover {
+  color: #ea5289;
 }
 
 .footer-social-media a {
@@ -157,6 +169,11 @@ header .header-panel > .menu-btn:hover {
   position: relative;
   background: transparent;
 }
+.why-advertise-with-us-wrapper {
+  max-width: 1056px;
+  margin: 0 auto;
+  height: auto;
+}
 .why-advertise-with-us::before {
   content: "";
   position: absolute;
@@ -169,18 +186,29 @@ header .header-panel > .menu-btn:hover {
   background-position: center;
   z-index: -1;
 }
-.why-advertise-with-us .why-advertise-with-us-wrapper {
-  max-width: 1056px;
-  margin: 0 auto;
-  height: auto;
-}
-.why-advertise-with-us .why-advertise-grid {
+.why-advertise-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 48px;
   margin-top: 67px;
 }
 
+@media screen and (max-width: 1200px) and (min-width: 801px) {
+  .why-advertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .why-advertise-card {
+    max-width: 320px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .why-advertise-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .why-advertise-card {
+    max-width: 320px;
+  }
+}
 .ad-formats {
   width: 100%;
   height: 1141px;
@@ -407,12 +435,18 @@ header .header-panel > .menu-btn:hover {
 }
 
 .gamburger-menu {
+  display: none;
   width: 47px;
   height: 47px;
   border-radius: 50%;
   background: url("../../img/gamburger-menu-icon.svg") center center/contain no-repeat;
 }
 
+@media screen and (max-width: 1200px) {
+  .gamburger-menu {
+    display: block;
+  }
+}
 .title {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -470,6 +504,7 @@ header .header-panel > .menu-btn:hover {
   background: rgb(255, 255, 255);
   border-radius: 20px;
   padding: 30px 36px;
+  margin: 0 auto;
 }
 .why-advertise-card h1 {
   font-family: "Montserrat", sans-serif;

@@ -1,8 +1,16 @@
-.why-advertise-with-us {
-  width: auto;
-  position: relative;
-  background: transparent;
-  &::before {
+.why-advertise {
+  &-with-us {
+    width: auto;
+    position: relative;
+    background: transparent;
+
+    &-wrapper {
+      max-width: 1056px;
+      margin: 0 auto;
+      height: auto;
+    }
+
+    &::before {
       content: '';
       position: absolute;
       top: -371px;
@@ -14,17 +22,39 @@
       background-position: center;
       z-index: -1;
     }
-    & .why-advertise-with-us-wrapper {
-    max-width: 1056px;
-    margin: 0 auto;
-    height: auto;
+  }
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    margin-top: 67px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 801px) {
+  .why-advertise {
+    &-grid {
+      grid-template-columns: repeat(2, 1fr);
+
     }
-    & .why-advertise {
-      &-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 48px;
-        margin-top: 67px;
-      }
+
+    &-card {
+      max-width: 320px;
     }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .why-advertise {
+    &-grid {
+      grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    &-card {
+      max-width: 320px;
+    }
+
+  }
 }
